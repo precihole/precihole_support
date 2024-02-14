@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-14 11:12:17.248685",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "column_break_xyfp",
+  "out_comes"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_xyfp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "out_comes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Out Comes"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-14 15:56:04.926170",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Commissioning Work Done Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

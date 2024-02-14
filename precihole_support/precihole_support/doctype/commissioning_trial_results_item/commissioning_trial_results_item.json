@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-14 11:19:27.377325",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "comp_name",
+  "drill_dia",
+  "comp_od",
+  "comp_length",
+  "drilling_dept",
+  "column_break_eyfy",
+  "cutting_speed_rpm",
+  "feed_rate",
+  "coolant_pressure_bar",
+  "no_drill_comp",
+  "quality_inspection_remark"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "comp_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comp Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "drill_dia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drill Dia"
+  },
+  {
+   "columns": 1,
+   "fieldname": "comp_od",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comp OD"
+  },
+  {
+   "columns": 1,
+   "fieldname": "comp_length",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comp Length"
+  },
+  {
+   "columns": 1,
+   "fieldname": "drilling_dept",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drilling Dept"
+  },
+  {
+   "fieldname": "column_break_eyfy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cutting_speed_rpm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cutting Speed RPM"
+  },
+  {
+   "columns": 1,
+   "fieldname": "feed_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Feed Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "coolant_pressure_bar",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Coolant Pressure Bar"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_drill_comp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "No Drill Comp"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quality_inspection_remark",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quality Inspection Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-14 16:00:52.761926",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Commissioning Trial Results Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

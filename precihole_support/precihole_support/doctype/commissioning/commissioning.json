@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "COMM-REPORT-.####",
+ "creation": "2024-02-14 10:55:42.207942",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pjmp",
+  "customer",
+  "location",
+  "amended_from",
+  "column_break_ftlk",
+  "sales_invoice",
+  "machine_no",
+  "warranty_start_date",
+  "column_break_rbif",
+  "posting_date",
+  "machine_type",
+  "warranty_end_date",
+  "visit_section",
+  "visit",
+  "work_done",
+  "operation",
+  "trial",
+  "short_supply_material",
+  "section_break_sjro",
+  "customer_name",
+  "customer_sign",
+  "column_break_imrk"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pjmp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Commissioning",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_ftlk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Link",
+   "label": "Machine No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Data",
+   "label": "Machine Type"
+  },
+  {
+   "fieldname": "visit_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visit",
+   "fieldtype": "Table",
+   "label": "Visit Details",
+   "options": "Commissioning Visit Item"
+  },
+  {
+   "fieldname": "warranty_start_date",
+   "fieldtype": "Date",
+   "label": "Warranty Start Date"
+  },
+  {
+   "fieldname": "warranty_end_date",
+   "fieldtype": "Date",
+   "label": "Warranty End Date"
+  },
+  {
+   "fieldname": "work_done",
+   "fieldtype": "Table",
+   "label": "Work Done",
+   "options": "Commissioning Work Done Item"
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Table",
+   "label": "Machine Operation and maintenance training",
+   "options": "Commissioning Machine Operation Item"
+  },
+  {
+   "fieldname": "trial",
+   "fieldtype": "Table",
+   "label": "Trial Results",
+   "options": "Commissioning Trial Results Item"
+  },
+  {
+   "fieldname": "section_break_sjro",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_sign",
+   "fieldtype": "Signature",
+   "label": "Customer Sign"
+  },
+  {
+   "fieldname": "short_supply_material",
+   "fieldtype": "Table",
+   "label": "Short Supply Material (If Any)",
+   "options": "Commissioning Short Supply Material Item"
+  },
+  {
+   "fieldname": "column_break_imrk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Data",
+   "label": "SAP Sales Invoice No"
+  },
+  {
+   "fieldname": "column_break_rbif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-14 16:40:39.482253",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Commissioning",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

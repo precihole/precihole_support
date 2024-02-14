@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TR-SHEET-.####",
+ "creation": "2024-02-14 11:31:52.290814",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "machine_no",
+  "engineer",
+  "column_break_tlvz",
+  "from_template",
+  "posting_date",
+  "commissioning",
+  "section_break_mmkx",
+  "trainings"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "commissioning",
+   "fieldtype": "Link",
+   "label": "Commissioning Reference",
+   "options": "Commissioning"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_tlvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Link",
+   "label": "Machine No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "engineer",
+   "fieldtype": "Link",
+   "label": "Service Engineer",
+   "options": "Service Engineer"
+  },
+  {
+   "fieldname": "section_break_mmkx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trainings",
+   "fieldtype": "Table",
+   "label": "trainings",
+   "options": "Training Sheet Item"
+  },
+  {
+   "fieldname": "from_template",
+   "fieldtype": "Link",
+   "label": "From Template",
+   "options": "Training Sheet Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-14 16:39:42.352973",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Training Sheet",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

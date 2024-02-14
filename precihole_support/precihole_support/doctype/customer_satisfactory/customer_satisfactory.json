@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-14 11:41:14.059961",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "commissioning",
+  "service_engineer",
+  "column_break_fxaw",
+  "posting_date",
+  "location",
+  "machine_no",
+  "section_break_pmjc",
+  "parameters"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "commissioning",
+   "fieldtype": "Link",
+   "label": "commissioning",
+   "options": "Commissioning"
+  },
+  {
+   "fieldname": "column_break_fxaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Link",
+   "label": "Machine No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "service_engineer",
+   "fieldtype": "Data",
+   "label": "Service Engineer"
+  },
+  {
+   "fieldname": "section_break_pmjc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "Customer Satisfactory Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-14 11:46:12.437409",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Customer Satisfactory",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
