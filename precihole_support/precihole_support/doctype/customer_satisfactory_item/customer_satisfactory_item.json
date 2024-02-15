@@ -6,19 +6,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "parameters",
+  "parameter",
   "can_be_improved",
   "good",
   "excellence"
  ],
  "fields": [
   {
-   "fieldname": "parameters",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Parameters"
-  },
-  {
+   "columns": 1,
    "default": "0",
    "fieldname": "can_be_improved",
    "fieldtype": "Check",
@@ -26,6 +21,7 @@
    "label": "Can be improved"
   },
   {
+   "columns": 1,
    "default": "0",
    "fieldname": "good",
    "fieldtype": "Check",
@@ -33,17 +29,25 @@
    "label": "Good"
   },
   {
+   "columns": 1,
    "default": "0",
    "fieldname": "excellence",
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Excellence"
+  },
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-02-14 11:46:10.229140",
+ "modified": "2024-02-15 11:05:27.278017",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Customer Satisfactory Item",

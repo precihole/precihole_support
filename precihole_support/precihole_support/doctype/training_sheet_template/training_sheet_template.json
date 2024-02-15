@@ -11,20 +11,20 @@
  ],
  "fields": [
   {
-   "fieldname": "test",
-   "fieldtype": "Table",
-   "options": "Training Sheet Template Item"
-  },
-  {
    "fieldname": "template_title",
    "fieldtype": "Data",
    "label": "Template Title",
    "unique": 1
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Table",
+   "options": "Training Sheet Template Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-14 16:37:10.881336",
+ "modified": "2024-02-15 10:01:38.397744",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Training Sheet Template",

@@ -14,7 +14,8 @@
   "posting_date",
   "commissioning",
   "section_break_mmkx",
-  "trainings"
+  "trainings",
+  "amended_from"
  ],
  "fields": [
   {
@@ -66,11 +67,22 @@
    "fieldtype": "Link",
    "label": "From Template",
    "options": "Training Sheet Template"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Training Sheet",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-02-14 16:39:42.352973",
+ "modified": "2024-02-15 10:04:44.407335",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Training Sheet",

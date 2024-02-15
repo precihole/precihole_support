@@ -25,7 +25,7 @@
   {
    "fieldname": "commissioning",
    "fieldtype": "Link",
-   "label": "commissioning",
+   "label": "Commissioning",
    "options": "Commissioning"
   },
   {
@@ -33,6 +33,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
    "label": "Posting date"
@@ -50,8 +51,9 @@
   },
   {
    "fieldname": "service_engineer",
-   "fieldtype": "Data",
-   "label": "Service Engineer"
+   "fieldtype": "Link",
+   "label": "Service Engineer",
+   "options": "Service Engineer"
   },
   {
    "fieldname": "section_break_pmjc",
@@ -66,7 +68,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-14 11:46:12.437409",
+ "modified": "2024-02-15 10:21:09.321859",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Customer Satisfactory",
