@@ -122,13 +122,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Delivery Note": {
+        "before_save": "precihole_support.precihole_support.public.py.delivery_note.create_commissioning"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
