@@ -124,7 +124,7 @@ app_license = "mit"
 
 doc_events = {
     "Delivery Note": {
-        "before_save": "precihole_support.precihole_support.public.py.delivery_note.create_commissioning"
+        "after_submit": "precihole_support.precihole_support.public.py.delivery_note.create_commissioning"
     }
 }
 
