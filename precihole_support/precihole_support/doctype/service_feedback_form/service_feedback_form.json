@@ -1,23 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-02-14 11:41:14.059961",
+ "creation": "2025-12-25 13:04:22.233325",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "machine_no",
   "customer",
-  "commissioning",
-  "service_engineer",
-  "column_break_fxaw",
+  "service_no",
+  "column_break_psuk",
   "posting_date",
   "location",
-  "machine_no",
-  "section_break_pmjc",
+  "service_engineer",
+  "section_break_gxvz",
   "parameters",
-  "section_break_nqpi",
-  "remarks"
+  "section_break_tqzm",
+  "remarks_or_suggestion"
  ],
  "fields": [
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Link",
+   "label": "Machine No",
+   "options": "Serial No"
+  },
   {
    "fieldname": "customer",
    "fieldtype": "Link",
@@ -25,31 +31,25 @@
    "options": "Customer"
   },
   {
-   "fieldname": "commissioning",
+   "fieldname": "service_no",
    "fieldtype": "Link",
-   "label": "Commissioning",
-   "options": "Commissioning"
+   "label": "Service No",
+   "options": "Service"
   },
   {
-   "fieldname": "column_break_fxaw",
+   "fieldname": "column_break_psuk",
    "fieldtype": "Column Break"
   },
   {
    "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting date"
+   "label": "Posting Date"
   },
   {
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
-  },
-  {
-   "fieldname": "machine_no",
-   "fieldtype": "Link",
-   "label": "Machine No",
-   "options": "Serial No"
   },
   {
    "fieldname": "service_engineer",
@@ -58,31 +58,32 @@
    "options": "Service Engineer"
   },
   {
-   "fieldname": "section_break_pmjc",
+   "fieldname": "section_break_gxvz",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "parameters",
    "fieldtype": "Table",
    "label": "Parameters",
-   "options": "Customer Satisfactory Item"
+   "options": "Service Feedback Item"
   },
   {
-   "fieldname": "remarks",
-   "fieldtype": "Small Text",
-   "label": "Remarks or Suggestion"
-  },
-  {
-   "fieldname": "section_break_nqpi",
+   "fieldname": "section_break_tqzm",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks_or_suggestion",
+   "fieldtype": "Small Text",
+   "label": "Remarks or suggestion if any"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-29 15:54:56.480226",
+ "modified": "2025-12-27 16:07:03.866770",
  "modified_by": "Administrator",
  "module": "Precihole Support",
- "name": "Customer Satisfactory",
+ "name": "Service Feedback Form",
  "owner": "Administrator",
  "permissions": [
   {
@@ -99,6 +100,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

@@ -30,7 +30,6 @@ frappe.ready(function() {
                             "Are you satisfied with the service engineer's know how?",
                             "Are you satisfied with the training's conduct?",
                             "Are you satisfied with the overall commissioning process?",
-                            "Remarks or suggestion for improvement if any?"
                         ];
 
                         parameter_list.forEach(p => {

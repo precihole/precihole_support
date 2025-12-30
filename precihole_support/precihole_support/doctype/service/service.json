@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-23 12:43:35.183734",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vofv",
+  "amended_from",
+  "machine_no",
+  "commissioning_no",
+  "customer",
+  "location",
+  "column_break_brab",
+  "posting_date",
+  "dispatch_date",
+  "commissioning_date",
+  "machine_type",
+  "column_break_spvh",
+  "service_required",
+  "warranty_start_date",
+  "warranty_end_date",
+  "section_break_ydpn",
+  "visit",
+  "problem_reported_by_customer",
+  "observation",
+  "action_taken",
+  "replacement",
+  "status",
+  "engineers_remark",
+  "remark",
+  "section_break_kcwz",
+  "customer_name",
+  "customer_signature",
+  "column_break_izdv"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vofv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Service",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "dispatch_date",
+   "fieldtype": "Date",
+   "label": "Dispatch Date"
+  },
+  {
+   "fieldname": "commissioning_date",
+   "fieldtype": "Date",
+   "label": "Commissioning Date"
+  },
+  {
+   "fieldname": "column_break_brab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "machine_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Machine No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Data",
+   "label": "Machine Type"
+  },
+  {
+   "fieldname": "service_required",
+   "fieldtype": "Select",
+   "label": "Service Required",
+   "options": "\nUnder Warranty\nOver Warranty\nGeneral Visit"
+  },
+  {
+   "fieldname": "column_break_spvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warranty_start_date",
+   "fieldtype": "Date",
+   "label": "Warranty Start Date"
+  },
+  {
+   "fieldname": "warranty_end_date",
+   "fieldtype": "Date",
+   "label": "Warranty End Date"
+  },
+  {
+   "fieldname": "section_break_ydpn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visit",
+   "fieldtype": "Table",
+   "label": "Visit Details",
+   "options": "Service Visit Item"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Table",
+   "label": "Engineer Observation",
+   "options": "Service Engineer Observation Item"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Table",
+   "label": "Action Taken",
+   "options": "Service Action Item"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Table",
+   "label": "Status Of Machine",
+   "options": "Status Of Machine Item"
+  },
+  {
+   "fieldname": "engineers_remark",
+   "fieldtype": "Table",
+   "label": "Engineers Remark",
+   "options": "Remark of Service Engineer"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Table",
+   "label": "Customer Remark",
+   "options": "Customer Remark Item"
+  },
+  {
+   "fieldname": "section_break_kcwz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Signature",
+   "label": "Customer Signature"
+  },
+  {
+   "fieldname": "column_break_izdv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commissioning_no",
+   "fieldtype": "Link",
+   "label": "Commissioning No",
+   "options": "Commissioning"
+  },
+  {
+   "fieldname": "problem_reported_by_customer",
+   "fieldtype": "Table",
+   "label": "Problem Reported By Customer",
+   "options": "Service Problem Reported Item"
+  },
+  {
+   "fieldname": "replacement",
+   "fieldtype": "Table",
+   "label": "Replacement (If Any)",
+   "options": "Service Replacemement Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-26 13:11:01.734167",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Service",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -15,7 +15,11 @@
   "commissioning",
   "section_break_mmkx",
   "trainings",
-  "amended_from"
+  "amended_from",
+  "section_break_mksy",
+  "signature",
+  "column_break_idis",
+  "operator_signature"
  ],
  "fields": [
   {
@@ -77,12 +81,30 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_mksy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Service Engineer Signature"
+  },
+  {
+   "fieldname": "column_break_idis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operator_signature",
+   "fieldtype": "Signature",
+   "label": "Operator Signature"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-15 10:04:44.407335",
+ "modified": "2025-12-26 09:42:13.288644",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Training Sheet",
@@ -102,6 +124,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

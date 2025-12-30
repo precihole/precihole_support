@@ -19,12 +19,13 @@
   {
    "fieldname": "test",
    "fieldtype": "Table",
+   "label": "Points",
    "options": "Training Sheet Template Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-15 10:01:38.397744",
+ "modified": "2025-12-26 10:45:53.713634",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Training Sheet Template",
@@ -44,6 +45,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

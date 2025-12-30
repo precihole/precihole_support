@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-23 12:33:52.967847",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "visit_date",
+  "engineer",
+  "working_hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "visit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Visit Date"
+  },
+  {
+   "fieldname": "engineer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Engineer",
+   "options": "Service Engineer"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Working Hours"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-23 12:59:36.429862",
+ "modified_by": "Administrator",
+ "module": "Precihole Support",
+ "name": "Service Visit Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
