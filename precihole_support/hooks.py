@@ -125,9 +125,6 @@ app_license = "mit"
 doc_events = {
     "Delivery Note": {
         "after_submit": "precihole_support.precihole_support.public.py.delivery_note.create_commissioning"
-    },
-    "Service Report": {
-        "validate": "precihole_support.precihole_support.doctype.service.service.Service.validate"
     }
 }
 
