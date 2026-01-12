@@ -85,7 +85,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Machine No",
-   "options": "Serial No"
+   "options": "Item"
   },
   {
    "fieldname": "machine_type",
@@ -193,7 +193,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-26 13:11:01.734167",
+ "modified": "2026-01-10 15:48:09.884416",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Service",
