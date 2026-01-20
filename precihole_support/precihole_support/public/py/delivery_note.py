@@ -1,11 +1,12 @@
 # Auto-create Commissioning when a Delivery Note is inserted
 import frappe 
 def create_commissioning(doc, method):
-    
+            
     if doc.division == "Machine Tools Division" and doc.business_property in ["Machines - Local", "Machines - Export"]:
         
         # Check if Commissioning already exists for this Delivery Note
         if not frappe.db.exists("Commissioning", {"delivery_note": doc.name}):
+            
 
             # Prepare Commissioning data
             commissioning_data = {
@@ -43,4 +44,4 @@ def create_commissioning(doc, method):
             for task in work_done_tasks: 
                 commissioning.append("work_done", {"task": task}) # ensure 'work_done' is the correct child table fieldname 
                 
-            commissioning.insert(ignore_permissions=True)
+            commissioning.insert(ignore_permissions = True)

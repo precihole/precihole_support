@@ -12,7 +12,7 @@
   "amended_from",
   "delivery_note",
   "column_break_ftlk",
-  "sales_order_number",
+  "sales_order",
   "machine_no",
   "warranty_start_date",
   "column_break_rbif",
@@ -147,11 +147,10 @@
    "fieldname": "delivery_note",
    "fieldtype": "Link",
    "label": "Delivery Note Number",
-   "options": "Delivery Note",
-   "search_index": 1
+   "options": "Delivery Note"
   },
   {
-   "fieldname": "sales_order_number",
+   "fieldname": "sales_order",
    "fieldtype": "Link",
    "label": "Sales Order Number",
    "options": "Sales Order"
@@ -160,7 +159,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-10 15:44:51.042548",
+ "modified": "2026-01-20 13:55:10.873615",
  "modified_by": "Administrator",
  "module": "Precihole Support",
  "name": "Commissioning",
