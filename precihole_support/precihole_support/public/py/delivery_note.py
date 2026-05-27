@@ -24,7 +24,7 @@ def create_commissioning(doc, method):
                 commissioning_data["machine_type"] = first_item.item_name # Item Name
                 
                 if first_item.against_sales_order:
-                    commissioning_data["sales_order_number"] = first_item.against_sales_order    
+                    commissioning_data["sales_order"] = first_item.against_sales_order    
 
             # Create Commissioning record
             commissioning = frappe.get_doc(commissioning_data)
