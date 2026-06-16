@@ -3,6 +3,8 @@
 
 import frappe
 from frappe.model.document import Document
+from frappe.utils import formatdate
+from frappe.utils import add_years, add_days
 
 
 class Commissioning(Document):
@@ -13,6 +15,22 @@ class Commissioning(Document):
 		docstatus = frappe.db.get_value('Training Sheet', {'commissioning': self.name}, 'docstatus')
 		if docstatus == None:
 			frappe.throw('No training sheet found')
-		if docstatus == 1:
-			return
-		frappe.throw('Either Training Sheet is in Draft or Cancelled')
+		if docstatus != 1:
+			
+			frappe.throw('Either Training Sheet is in Draft or Cancelled')
+
+			if not self.warranty_start_date:
+					frappe.throw("Warranty Start Date is required")
+
+			self.remark = (
+				"The Above mentioned machine has been commissioned satisfactorily on "
+				+ formatdate(self.warranty_start_date, "dd-MM-yyyy")
+				+ " and handed over to Production Department"
+			)
+	
+	
+		
+	
+	def validate(doc, method=None):
+		if doc.warranty_start_date:
+			doc.warranty_end_date = add_days(add_years(doc.warranty_start_date, 1), -1)	

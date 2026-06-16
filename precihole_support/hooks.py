@@ -128,7 +128,9 @@ doc_events = {
     }
 }
 
-
+doctype_js = {
+    "Commissioning": "public/js/commissioning.js"
+}
 
 
 

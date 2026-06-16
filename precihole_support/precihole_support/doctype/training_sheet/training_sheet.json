@@ -17,8 +17,10 @@
   "trainings",
   "amended_from",
   "section_break_mksy",
+  "service_engineer",
   "signature",
   "column_break_idis",
+  "operator_engineer",
   "operator_signature"
  ],
  "fields": [
@@ -48,7 +50,7 @@
    "fieldname": "machine_no",
    "fieldtype": "Link",
    "label": "Machine No",
-   "options": "Item"
+   "options": "Serial No"
   },
   {
    "fieldname": "engineer",
@@ -99,19 +101,32 @@
    "fieldname": "operator_signature",
    "fieldtype": "Signature",
    "label": "Operator Signature"
+  },
+  {
+   "fieldname": "service_engineer",
+   "fieldtype": "Link",
+   "label": "Service Engineer",
+   "options": "Service Engineer"
+  },
+  {
+   "fieldname": "operator_engineer",
+   "fieldtype": "Data",
+   "label": "Operator Engineer"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-26 09:42:13.288644",
- "modified_by": "Administrator",
+ "modified": "2026-06-06 12:37:32.454966",
+ "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Training Sheet",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -121,6 +136,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

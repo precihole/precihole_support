@@ -22,4 +22,16 @@ frappe.ui.form.on("Commissioning", {
         }
         frm.refresh_field("work_done");
 	},
+
+    refresh(frm) {
+        if (!frm.is_new()) {
+            frm.add_custom_button(__('Training Sheet'), function () {
+                frappe.new_doc('Training Sheet', {
+                    commissioning: frm.doc.name,
+                    customer: frm.doc.customer,
+                    machine_no: frm.doc.machine_no
+                });
+            }, __('Create'));
+        }
+    }
 });

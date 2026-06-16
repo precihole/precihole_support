@@ -8,29 +8,22 @@
  "field_order": [
   "point",
   "service_engineer",
-  "operator_engineer",
-  "training_date"
+  "operator_engineer"
  ],
  "fields": [
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "service_engineer",
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Service Engineer"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "operator_engineer",
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Operator Engineer"
-  },
-  {
-   "fieldname": "training_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Training Date"
   },
   {
    "fieldname": "point",
@@ -42,8 +35,8 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-26 09:38:05.916488",
- "modified_by": "Administrator",
+ "modified": "2026-06-06 12:18:41.107609",
+ "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Training Sheet Item",
  "owner": "Administrator",

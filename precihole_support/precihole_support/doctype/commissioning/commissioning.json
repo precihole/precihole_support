@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "COMM-REPORT-.####",
+ "autoname": "format:COMM-REPORT-{machine_no}",
  "creation": "2024-02-14 10:55:42.207942",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,8 +9,8 @@
   "section_break_pjmp",
   "customer",
   "location",
-  "amended_from",
   "delivery_note",
+  "amended_from",
   "column_break_ftlk",
   "sales_order",
   "machine_no",
@@ -25,10 +25,16 @@
   "operation",
   "trial",
   "short_supply_material",
+  "service_engineer_observation",
+  "customer_remark",
   "section_break_sjro",
   "customer_name",
   "customer_sign",
-  "column_break_imrk"
+  "column_break_imrk",
+  "service_engineer_name",
+  "service_engineer_signature",
+  "section_break_hecq",
+  "remark"
  ],
  "fields": [
   {
@@ -147,26 +153,59 @@
    "fieldname": "delivery_note",
    "fieldtype": "Link",
    "label": "Delivery Note Number",
-   "options": "Delivery Note"
+   "options": "Delivery Note",
+   "search_index": 1
   },
   {
    "fieldname": "sales_order",
    "fieldtype": "Link",
    "label": "Sales Order Number",
    "options": "Sales Order"
+  },
+  {
+   "fieldname": "service_engineer_observation",
+   "fieldtype": "Small Text",
+   "label": "Service Engineer Observation"
+  },
+  {
+   "fieldname": "customer_remark",
+   "fieldtype": "Small Text",
+   "label": "Customer Remark"
+  },
+  {
+   "fieldname": "service_engineer_name",
+   "fieldtype": "Link",
+   "label": "Service Engineer Name",
+   "options": "Service Engineer"
+  },
+  {
+   "fieldname": "service_engineer_signature",
+   "fieldtype": "Signature",
+   "label": "Service Engineer Signature"
+  },
+  {
+   "fieldname": "section_break_hecq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-01-20 13:55:10.873615",
- "modified_by": "Administrator",
+ "modified": "2026-06-06 11:48:50.913319",
+ "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Commissioning",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
