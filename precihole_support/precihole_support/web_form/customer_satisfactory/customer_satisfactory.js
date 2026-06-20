@@ -13,7 +13,7 @@ frappe.ready(function() {
                         let commissioning = r.message;
                         console.log(r.message);
 
-                        // Auto-fill parent fields
+                        // Auto-fill parent fields properly
                         frappe.web_form.set_value("customer", commissioning.customer);
                         frappe.web_form.set_value("location", commissioning.location);
 
