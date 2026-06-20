@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:SF-{machine_no}-.####",
  "creation": "2025-12-25 13:04:22.233325",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -22,7 +23,7 @@
    "fieldname": "machine_no",
    "fieldtype": "Link",
    "label": "Machine No",
-   "options": "Serial No"
+   "options": "Item"
   },
   {
    "fieldname": "customer",
@@ -80,10 +81,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-27 16:07:03.866770",
- "modified_by": "Administrator",
+ "modified": "2026-06-20 10:49:18.982513",
+ "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Service Feedback Form",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
