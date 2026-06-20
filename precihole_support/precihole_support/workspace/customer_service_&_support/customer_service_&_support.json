@@ -1,0 +1,68 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"F6XQUtvlL7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Customer Service &amp; Support</span>\",\"col\":12}},{\"id\":\"RfmNGx4KJ3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Commissioning\",\"col\":3}},{\"id\":\"rAsQRCMqSa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Sheet\",\"col\":3}},{\"id\":\"fW3nH-3BQO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Feedback\",\"col\":3}},{\"id\":\"tjbJkgwDRv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service\",\"col\":3}},{\"id\":\"JEtz7P8_8Z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Feedback\",\"col\":3}}]",
+ "creation": "2026-06-20 10:01:01.136475",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "call",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Customer Service & Support",
+ "links": [],
+ "modified": "2026-06-20 10:11:45.111646",
+ "modified_by": "aditya@preciholesports.com",
+ "module": "Precihole Support",
+ "name": "Customer Service & Support",
+ "number_cards": [],
+ "owner": "aditya@preciholesports.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service",
+   "link_to": "Service",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Training Sheet",
+   "link_to": "Training Sheet",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Feedback",
+   "type": "URL",
+   "url": "/service--feedback-/new"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Commissioning",
+   "link_to": "Commissioning",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Customer Feedback",
+   "type": "URL",
+   "url": "/customer-satisfactory-/new"
+  }
+ ],
+ "title": "Customer Service & Support"
+}
