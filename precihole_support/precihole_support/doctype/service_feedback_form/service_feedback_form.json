@@ -16,7 +16,8 @@
   "section_break_gxvz",
   "parameters",
   "section_break_tqzm",
-  "remarks_or_suggestion"
+  "remarks_or_suggestion",
+  "customer_signature"
  ],
  "fields": [
   {
@@ -76,12 +77,17 @@
    "fieldname": "remarks_or_suggestion",
    "fieldtype": "Small Text",
    "label": "Remarks or suggestion if any"
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Signature",
+   "label": "Customer Signature"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-20 10:49:18.982513",
+ "modified": "2026-06-24 08:26:32.241198",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Service Feedback Form",

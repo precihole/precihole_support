@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"F6XQUtvlL7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Customer Service &amp; Support</span>\",\"col\":12}},{\"id\":\"RfmNGx4KJ3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Commissioning\",\"col\":3}},{\"id\":\"rAsQRCMqSa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Sheet\",\"col\":3}},{\"id\":\"fW3nH-3BQO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Feedback\",\"col\":3}},{\"id\":\"tjbJkgwDRv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service\",\"col\":3}},{\"id\":\"JEtz7P8_8Z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Feedback\",\"col\":3}}]",
+ "content": "[{\"id\":\"F6XQUtvlL7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Customer Service &amp; Support</span>\",\"col\":12}},{\"id\":\"RfmNGx4KJ3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Commissioning Report\",\"col\":3}},{\"id\":\"rAsQRCMqSa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Sheet\",\"col\":3}},{\"id\":\"fW3nH-3BQO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Feedback\",\"col\":3}},{\"id\":\"tjbJkgwDRv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Report\",\"col\":3}},{\"id\":\"JEtz7P8_8Z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Service Feedback\",\"col\":3}}]",
  "creation": "2026-06-20 10:01:01.136475",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Customer Service & Support",
  "links": [],
- "modified": "2026-06-20 10:11:45.111646",
+ "modified": "2026-06-24 08:36:35.600300",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Customer Service & Support",
@@ -28,8 +28,8 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Service",
-   "link_to": "Service",
+   "label": "Commissioning Report",
+   "link_to": "Commissioning",
    "stats_filter": "[]",
    "type": "DocType"
   },
@@ -51,8 +51,8 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Commissioning",
-   "link_to": "Commissioning",
+   "label": "Service Report",
+   "link_to": "Service",
    "stats_filter": "[]",
    "type": "DocType"
   },

@@ -16,7 +16,8 @@
   "section_break_pmjc",
   "parameters",
   "section_break_nqpi",
-  "remarks"
+  "remarks",
+  "customer_signature"
  ],
  "fields": [
   {
@@ -76,11 +77,16 @@
   {
    "fieldname": "section_break_nqpi",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Signature",
+   "label": "Customer Signature"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-20 10:39:53.138342",
+ "modified": "2026-06-24 08:27:10.533762",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Customer Satisfactory",
