@@ -21,7 +21,6 @@
   "service_required",
   "warranty_start_date",
   "warranty_end_date",
-  "type_of_failure",
   "section_break_ydpn",
   "visit",
   "problem_reported_by_customer",
@@ -189,19 +188,13 @@
    "fieldtype": "Table",
    "label": "Replacement (If Any)",
    "options": "Service Replacemement Item"
-  },
-  {
-   "fieldname": "type_of_failure",
-   "fieldtype": "Link",
-   "label": "Type of Failure",
-   "options": "Type of Failure"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-06-24 08:17:08.807632",
+ "modified": "2026-07-11 15:00:06.148241",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Service",
