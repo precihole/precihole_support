@@ -83,7 +83,17 @@ class TrainingSheetTemplate(Document):
 			"Conveyor cleaning procedure explain",
 			"VFD parameter explain",
 			"Electric panel explain",
-			"Critical spare part list explain."
+			"Critical spare part list explain.",
+			"Tool Monitoring Setting & Graph explain.",
+			"Honing Procedure",
+			"Bearing Locking bolt torque range setting",
+			"Slide Return Delay",
+			"Spindle Stop Delay",
+			"HP Pump Selection on during Slide Return.",
+			"Spindle on Selection on during Slide auto return.",
+			"Pneumatic Setting.",
+			"Feed Override & its importance.",
+			"Belt breakage proxy & its importance."
 			
 			
 			
