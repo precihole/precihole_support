@@ -45,7 +45,8 @@
   {
    "fieldname": "location",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Location",
+   "length": 1000
   },
   {
    "fieldname": "machine_no",
@@ -86,7 +87,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-24 08:27:10.533762",
+ "modified": "2026-08-31 12:10:52.541849",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Customer Satisfactory",

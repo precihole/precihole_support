@@ -51,7 +51,8 @@
   {
    "fieldname": "location",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Location",
+   "length": 1000
   },
   {
    "fieldname": "service_engineer",
@@ -87,7 +88,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-24 08:26:32.241198",
+ "modified": "2026-08-31 12:11:06.332414",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Service Feedback Form",

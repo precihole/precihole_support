@@ -33,7 +33,9 @@
   "section_break_kcwz",
   "customer_name",
   "customer_signature",
-  "column_break_izdv"
+  "column_break_izdv",
+  "service_engineer_name",
+  "service_engineer_signature"
  ],
  "fields": [
   {
@@ -59,7 +61,8 @@
   {
    "fieldname": "location",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Location",
+   "length": 1000
   },
   {
    "fieldname": "dispatch_date",
@@ -188,13 +191,24 @@
    "fieldtype": "Table",
    "label": "Replacement (If Any)",
    "options": "Service Replacemement Item"
+  },
+  {
+   "fieldname": "service_engineer_name",
+   "fieldtype": "Link",
+   "label": "Service Engineer Name",
+   "options": "Service Engineer"
+  },
+  {
+   "fieldname": "service_engineer_signature",
+   "fieldtype": "Signature",
+   "label": "Service Engineer Signature"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-11 15:00:06.148241",
+ "modified": "2026-08-31 14:26:13.195415",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Service",
