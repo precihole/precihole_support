@@ -75,9 +75,9 @@ jobs:
         run: sudo apt-get update &&sudo apt-get install -y  mariadb-client
 
       - name: Setup
-        run: |
-          pip install frappe-bench
-          bench init frappe-bench --frappe-branch version-15 
+        run: 
+        | pip install frappe-bench
+          bench init frappe-bench --frappe-branch version-15 --skip-redis-config-generation
           mariadb --host 127.0.0.1 --port 3306 -u root -proot -e "SET GLOBAL character_set_server = 'utf8mb4'"
           mariadb --host 127.0.0.1 --port 3306 -u root -proot -e "SET GLOBAL collation_server = 'utf8mb4_unicode_ci'"
 
