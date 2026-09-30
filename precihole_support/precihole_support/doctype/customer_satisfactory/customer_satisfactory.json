@@ -52,7 +52,7 @@
    "fieldname": "machine_no",
    "fieldtype": "Link",
    "label": "Machine No",
-   "options": "Item"
+   "options": "Project"
   },
   {
    "fieldname": "service_engineer",
@@ -87,7 +87,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-31 12:10:52.541849",
+ "modified": "2026-09-30 10:56:04.585035",
  "modified_by": "aditya@preciholesports.com",
  "module": "Precihole Support",
  "name": "Customer Satisfactory",

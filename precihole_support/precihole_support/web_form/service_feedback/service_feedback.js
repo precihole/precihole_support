@@ -1,71 +1,205 @@
-frappe.ready(function() {
-	frappe.web_form.on('machine_no', (field, value) => {
-		if (value){
-			frappe.call({
-				method:"frappe.client.get_value",
-				args: {
-					doctype: "Service",
-					filters: { machine_no: value },
-					fieldname: ["name", "customer", "location"]
+frappe.ready(function () {
 
-				},
-				callback: function(r) {
-					if (r.message) {
-						let service = r.message;
-						console.log(r.message);
+    if (!frappe.web_form) {
+        return;
+    }
 
-						// Auto Fill parent fields
-						frappe.web_form.set_value("customer", service.customer);
-						frappe.web_form.set_value("location", service.location);
-						
-						// Set commissioning name (doc name)
-						if (service.name) {
-							frappe.web_form.set_value("service_no", service.name);
-						}
+    // =====================================================
+    // MACHINE NO LINK FILTER
+    // Field Type: Link
+    // Options: Project
+    // =====================================================
 
-						//  --Populate Parameters Child Table --
-						frappe.web_form.doc.parameters = [];
+    const machine_field = frappe.web_form.get_field("machine_no");
 
-						let parameter_list = [ 
-							"Rate the service engineers understanding of problems and problem solving.",
-							"Rate the responsiveness of the Precihole support team.",
-							"The support team recognised the issue and was able to take neccessary action."
-						];
+    if (machine_field) {
+        machine_field.get_query = function () {
+            return {
+                filters: [
+                    ["Project", "status", "=", "Open"],
+                    [
+                        "Project",
+                        "business_property",
+                        "in",
+                        [
+                            "Machines - Local",
+                            "Machines - Export"
+                        ]
+                    ]
+                ]
+            };
+        };
+    }
 
-						parameter_list.forEach(p => {
-							frappe.web_form.doc.parameters.push({ parameter: p });
-						});
 
-						if(typeof frappe.web_form.refresh === "function") {
-							frappe.web_form.refresh();
-						} else {
-							frappe.web_form.render();
-						}	
-					} else {
-						console.log("No Service record found for machine_no:", value);
-					}
-					
-				}
-			});
-		}
-	});
+    let is_processing = false;
 
-	frappe.web_form.validate = async function() {
-		let machine_no =  frappe.web_form.get_value('machine_no');
 
-		if (machine_no) {
-			let result = await frappe.call({
-				method:"frappe.client.get_value",
-				args: {
-					doctype : "Service",
-					filters: { machine_no: machine_no },
-					fieldname: "name"
-				}
-			});
+    // =====================================================
+    // MACHINE NO CHANGE
+    // =====================================================
 
-			if (!result.message) {
-				frappe.throw(`No Service record found for machine ${machine_no}. Cannot save.`)
-			}
-		}
-	};
-});	
+    frappe.web_form.on("machine_no", function (field, value) {
+
+        if (!value || is_processing) {
+            return;
+        }
+
+        is_processing = true;
+
+        frappe.call({
+            method: "frappe.client.get_list",
+
+            args: {
+                doctype: "Service",
+
+                filters: {
+                    machine_no: value
+                },
+
+                fields: [
+                    "name",
+                    "machine_no",
+                    "customer",
+                    "location"
+                ],
+
+                limit_page_length: 1
+            },
+
+            callback: function (r) {
+
+                try {
+
+                    if (
+                        !r.message ||
+                        !Array.isArray(r.message) ||
+                        r.message.length === 0
+                    ) {
+                        return;
+                    }
+
+                    const service = r.message[0];
+
+
+                    // =====================================
+                    // AUTO FILL SERVICE DETAILS
+                    // =====================================
+
+                    frappe.web_form.set_value(
+                        "service_no",
+                        service.name || ""
+                    );
+
+                    frappe.web_form.set_value(
+                        "customer",
+                        service.customer || ""
+                    );
+
+                    frappe.web_form.set_value(
+                        "location",
+                        service.location || ""
+                    );
+
+
+                    // =====================================
+                    // POPULATE PARAMETERS
+                    // =====================================
+
+                    frappe.web_form.doc.parameters = [];
+
+                    const parameter_list = [
+                        "Rate the service engineers understanding of problems and problem solving.",
+                        "Rate the responsiveness of the Precihole support team.",
+                        "The support team recognised the issue and was able to take neccessary action."
+                    ];
+
+                    parameter_list.forEach(function (parameter) {
+
+                        frappe.web_form.doc.parameters.push({
+                            parameter: parameter
+                        });
+
+                    });
+
+
+                    // =====================================
+                    // REFRESH ONLY PARAMETERS GRID
+                    // =====================================
+
+                    const parameter_field =
+                        frappe.web_form.get_field("parameters");
+
+                    if (
+                        parameter_field &&
+                        parameter_field.grid
+                    ) {
+                        parameter_field.grid.refresh();
+                    }
+
+                } finally {
+
+                    is_processing = false;
+
+                }
+
+            },
+
+            error: function () {
+                is_processing = false;
+            }
+
+        });
+
+    });
+
+
+    // =====================================================
+    // VALIDATION
+    // =====================================================
+
+    frappe.web_form.validate = async function () {
+
+        const machine_no =
+            frappe.web_form.get_value("machine_no");
+
+        if (!machine_no) {
+            return true;
+        }
+
+        const result = await frappe.call({
+            method: "frappe.client.get_list",
+
+            args: {
+                doctype: "Service",
+
+                filters: {
+                    machine_no: machine_no
+                },
+
+                fields: [
+                    "name"
+                ],
+
+                limit_page_length: 1
+            }
+        });
+
+        if (
+            !result.message ||
+            !Array.isArray(result.message) ||
+            result.message.length === 0
+        ) {
+
+            frappe.throw(
+                `No Service record found for machine ${machine_no}. Cannot save.`
+            );
+
+            return false;
+        }
+
+        return true;
+
+    };
+
+});
